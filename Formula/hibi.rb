@@ -6,12 +6,12 @@ class Hibi < Formula
 
   on_macos do
     url "https://github.com/devsepnine/hibi_ai/releases/download/v0.1.0/hibi-ai-0.1.0-macos.tar.gz"
-    sha256 "af81548cd42edf9ac90b2dcd77b33679a8d9a7280ba4a42666d1731366cdaf1f"
+    sha256 "43bfe3923920def16ed10fac984ab0c2ebb2c61c59b93a5016b775a788883a2c"
   end
 
   on_linux do
     url "https://github.com/devsepnine/hibi_ai/releases/download/v0.1.0/hibi-ai-0.1.0-linux.tar.gz"
-    sha256 "2a10d8d70fbbdb62fc2d73368d76d728dd26b2f0bf7789df6ba74f093b8e31e2"
+    sha256 "db97bee2da16750e6bcf2adc488b06d0e365f4aad18e0853d1225b4f0605d884"
   end
 
   def install
