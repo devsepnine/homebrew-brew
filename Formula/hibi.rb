@@ -1,17 +1,17 @@
 class Hibi < Formula
   desc "TUI installer for Claude Code and Codex CLI configurations"
   homepage "https://github.com/devsepnine/hibi_ai"
-  version "1.9.0"
+  version "1.9.1"
   license "MIT"
 
   on_macos do
-    url "https://github.com/devsepnine/hibi_ai/releases/download/v1.9.0/hibi-ai-1.9.0-macos.tar.gz"
-    sha256 "a63e1c8d82bacd35831061110bf7b3eaf8c0c7d642480d269e5177b8203966c0"
+    url "https://github.com/devsepnine/hibi_ai/releases/download/v1.9.1/hibi-ai-1.9.1-macos.tar.gz"
+    sha256 "d112c73c3ab1c9a9e928b4c5e39e22b09c846795898ee831198469bfb3cff600"
   end
 
   on_linux do
-    url "https://github.com/devsepnine/hibi_ai/releases/download/v1.9.0/hibi-ai-1.9.0-linux.tar.gz"
-    sha256 "0bc0fce2ca5fc2c39cf2057f013f3f0ff3635b055a257abf5ba23422bce1d6a7"
+    url "https://github.com/devsepnine/hibi_ai/releases/download/v1.9.1/hibi-ai-1.9.1-linux.tar.gz"
+    sha256 "3443f09b9dcad15d6551d1ab54593d84e6444eadfb46f8aae881e83f1a59e853"
   end
 
   def install
@@ -38,6 +38,6 @@ class Hibi < Formula
 
   test do
     # Test that binary runs
-    assert_match "hibi", shell_output("#{bin}/hibi --help 2>&1", 1)
+    assert_match "hibi", shell_output("#{bin}/hibi --help")
   end
 end
