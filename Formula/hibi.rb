@@ -1,17 +1,17 @@
 class Hibi < Formula
   desc "TUI installer for Claude Code and Codex CLI configurations"
   homepage "https://github.com/devsepnine/hibi_ai"
-  version "1.9.7"
+  version "1.9.8"
   license "MIT"
 
   on_macos do
-    url "https://github.com/devsepnine/hibi_ai/releases/download/v1.9.7/hibi-ai-1.9.7-macos.tar.gz"
-    sha256 "5890c862264fc881c5fe6f73cf3a8b21931fba47f7621eddda0ca697806f8517"
+    url "https://github.com/devsepnine/hibi_ai/releases/download/v1.9.8/hibi-ai-1.9.8-macos.tar.gz"
+    sha256 "11d3fc615738513889c8ebfa51a2e041a0173d2c0981b8f32ee1dd398c986bd2"
   end
 
   on_linux do
-    url "https://github.com/devsepnine/hibi_ai/releases/download/v1.9.7/hibi-ai-1.9.7-linux.tar.gz"
-    sha256 "0bc11254ed69d689790744aafb7e16557ef4aa3749d27bc71e47c0b66a7df38a"
+    url "https://github.com/devsepnine/hibi_ai/releases/download/v1.9.8/hibi-ai-1.9.8-linux.tar.gz"
+    sha256 "f9dccf78350564527cb36582d34d2466eed4b498d517b02f4d1526d6791f6491"
   end
 
   def install
