@@ -15,22 +15,13 @@ class Hibi < Formula
   end
 
   def install
-    # Install binary
     bin.install "hibi"
 
-    # Install configuration files to share directory
     share_dir = share/"hibi"
-    share_dir.install "agents"
-    share_dir.install "commands"
-    share_dir.install "contexts"
-    share_dir.install "hooks"
-    share_dir.install "mcps"
-    share_dir.install "output-styles"
-    share_dir.install "plugins"
-    share_dir.install "rules"
-    share_dir.install "skills"
-    share_dir.install "statusline"
-    share_dir.install "settings.json"
+    %w[agents commands contexts hooks mcps output-styles plugins rules skills statusline].each do |d|
+      share_dir.install d if File.exist?(d)
+    end
+    share_dir.install "settings.json" if File.exist?("settings.json")
     share_dir.install "CLAUDE.md" if File.exist?("CLAUDE.md")
     share_dir.install "AGENTS.md" if File.exist?("AGENTS.md")
     share_dir.install "mcp.md" if File.exist?("mcp.md")
